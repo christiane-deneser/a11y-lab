@@ -1,16 +1,30 @@
 # Messy notes 1.1.1 Non-text Content
 
-## a) Text alternatives for interactive graphics / controls
+# a) Text alternatives for interactive graphics / controls
 
-* Grafiken/Abbildungen als Bedienelemente (Menüs, Logos, Teaserbilder oder Schaltflächen (Link, Button))
-* Icon Fonts als Bedienelemente (Menüs, Logos, Teaserbilder oder Schaltflächen (Link, Button))
-* SVGs als Bedienelemente (Menüs, Logos, Teaserbilder oder Schaltflächen (Link, Button))
+(Menüs, Logos, Teaserbilder oder Schaltflächen (Link, Button))
+
+* Grafiken/Abbildungen als Bedienelemente 
+* Icon Fonts als Bedienelemente
+* SVGs als Bedienelemente
 
 ## Hate: Icons with CSS generated content -> Closer look!
 ## Hate: Icon Fonts
 ## Hate: SVGs
 
-### Logos
+2.1 Anzeige der Alternativtexte von Grafiken
+
+2.2 Anzeige von Image maps
+
+2.3 Textalternativen für Hintergrundgrafiken
+
+2.4 Textalternativen für Icon Fonts
+
+2.5 Textalternativen für Inline-SVGs
+
+2.6 Gleichwertige (äquivalente) Alternativtexte
+
+## Logos
 
 ```
 <div>
@@ -28,13 +42,13 @@
 </div>
 ```
 
-### Bei verlinkten Abbildungen gibt es folgende Möglichkeiten
+## Bei verlinkten Abbildungen gibt es folgende Möglichkeiten
 
 * Generell gilt:
   * Alternativtexte sollen kurz sein.
   * Ausführliche Beschreibungen von Abbildungen sollen nicht im Alternativtext, sondern im Kontext der Abbildung zur Verfügung gestellt werden.
 
-#### 1) Wenn Abbildung nicht dekorativ und Linkziel aus Abb. hervor geht (z.B. Logo. Hier anderes Bspl.: Gegenstand wird in der Textalternative beschrieben
+### 1) Wenn Abbildung nicht dekorativ und Linkziel aus Abb. hervor geht (z.B. Logo. Hier anderes Bspl.: Gegenstand wird in der Textalternative beschrieben
 
 ```
 <a href="/">
@@ -42,7 +56,7 @@
 </a>
 ```
 
-#### 2) Abbildung ist dekorativ und unwichtig: Das Ziel des Links wird über die Textalternative vermittelt
+### 2) Abbildung ist dekorativ und unwichtig: Das Ziel des Links wird über die Textalternative vermittelt
 
 ```
 <a href="/methodik/taktilographie">
@@ -50,7 +64,7 @@
 </a>
 ```
 
-#### 3) Beides ist wichtig: Abbildung und Linkziel: Der sinnhafte Inhalt des abgebildeten Gegenstandes und Ziel des Links bzw. die Aktion werden über die Textalternative vermittelt
+### 3) Beides ist wichtig: Abbildung und Linkziel: Der sinnhafte Inhalt des abgebildeten Gegenstandes und Ziel des Links bzw. die Aktion werden über die Textalternative vermittelt
 
 ```
 <a href="/">
@@ -58,11 +72,11 @@
 </a>
 ```
 
-### Alternativtexte für redundant verlinkte Abbildungen
+## 3 Alternativtexte für redundant verlinkte Abbildungen
 
 * Wenn eine Abbildung und ein danebenstehender Textlink auf dasselbe Ziel verweisen, muss geprüft werden, ob Abbildung und Text in den selben Link eingeschlossen sind.
 
-#### 1) Abbildung und Text innerhalb des selben Links
+### 1) Abbildung und Text innerhalb des selben Links
 
 * Wenn Abbildung und Text innerhalb des selben Links stehen, soll der Alternativtext der Abbildung nicht den Text des Links wiederholen. 
 * Je nach Inhalt der Abbildung kann das `alt`-Attribut dann leer bleiben _oder_ den abgebildeten Inhalt beschreiben,
@@ -75,7 +89,7 @@
 </a>
 ```
 
-#### 2) Abbildung und Text in verschiednenen Links (mit selbem Linkziel)
+### 2) Abbildung und Text in verschiednenen Links (mit selbem Linkziel)
 
 * Wenn Abbildung und Text zwei unabhängige Links auf dasselbe Ziel sind, dann kann das `alt`-Attribut dagegen _nicht_ leer bleiben.
 * Denn gängige Screenreader verlassen sich nicht darauf, dass leere `alt`-Attribute sachgerecht eingesetzt werden,
@@ -89,3 +103,6 @@
   <span>Taktilographie</span>
 </a>
 ```
+
+## 3 Unterstützung von SVGs durch assistive Technologien
+
